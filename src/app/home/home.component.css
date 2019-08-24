@@ -1,0 +1,29 @@
+.drawer-container {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.sidenav-container {
+    width: 220px;
+    height: 200px;
+    padding: 16px;
+    margin-bottom: 10px;
+    
+}
+.img-Slide{
+    padding-right: 50px;
+}
+.img-bulb{
+    padding-left: 30px;
+
+}
+.img-logo{
+    height:100%;
+}
+
+.size {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
