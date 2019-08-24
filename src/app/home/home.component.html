@@ -1,26 +1,42 @@
-<mat-sidenav-container class="drawer-container">
-        <mat-sidenav mode="side" opened>
+<mat-sidenav-container class="drawer-container background">
+        <mat-sidenav mode="side" opened class="background">
                 <div class="sidenav-container">
                         <img src="../../assets/img/logo.png" class="img-logo">
                 </div>
                 <div class="size">
-                        <img src="../../assets/img/bulb.png" class="img-bulb">
+                        <img src="../../assets/img/bulb.png">
                         Smart Filters
                 </div>
                 <mat-divider></mat-divider>
                 <div class="sidenav-container">
                         <img src="../../assets/img/sale.png" class="img-Slide">
-                        <mat-slide-toggle color="link"></mat-slide-toggle>
+                        <mat-slide-toggle class="slide"></mat-slide-toggle>
                         <img src="../../assets/img/cal.png" class="img-Slide">
                         <mat-slide-toggle color="link"></mat-slide-toggle>
                         <img src="../../assets/img/heart.png" class="img-Slide">
                         <mat-slide-toggle color="link"></mat-slide-toggle>
                 </div>
                 <mat-divider></mat-divider>
-                <mat-form-field class="example-full-width">
-                        <mat-icon matPrefix>sheart</mat-icon>
-                        <input matInput type="input" placeholder="Search" >
+                <div class="size">
+                        Status
+                </div>
+                <mat-form-field appearance="outline" >
+                        <mat-label class="input-search">
+                                <mat-icon aria-hidden="false">search</mat-icon> search
+                        </mat-label>
+                        <input matInput >
+                        
                 </mat-form-field>
+                <button mat-raised-button class="button">DELIVERED</button>
         </mat-sidenav>
-        <mat-sidenav-content>Main content</mat-sidenav-content>
+        <mat-sidenav-content>
+                <mat-toolbar class="menu">
+                        <mat-toolbar-row>
+
+                                <mat-icon aria-hidden="false">home</mat-icon>
+                                <mat-icon aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+                        </mat-toolbar-row>
+                </mat-toolbar>
+        </mat-sidenav-content>
+
 </mat-sidenav-container>
