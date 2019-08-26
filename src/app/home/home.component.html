@@ -7,7 +7,7 @@
                         <img src="../../assets/img/bulb.png">
                         Smart Filters
                 </div>
-                <mat-divider></mat-divider>
+                <mat-divider class="divider"></mat-divider>
                 <div class="sidenav-container">
                         <img src="../../assets/img/sale.png" class="img-Slide">
                         <mat-slide-toggle class="slide"></mat-slide-toggle>
@@ -16,37 +16,46 @@
                         <img src="../../assets/img/heart.png" class="img-Slide">
                         <mat-slide-toggle color="link"></mat-slide-toggle>
                 </div>
-                <mat-divider></mat-divider>
+                <mat-divider class="divider"></mat-divider>
                 <div class="size">
-                        Status
+                        <span class="font">Status</span>
+                        <mat-form-field appearance="outline" class="input-search">
+                                <mat-label>
+                                        <mat-icon aria-hidden="false">search</mat-icon> Search
+                                </mat-label>
+                                <input matInput>
+                        </mat-form-field>
+                        <button mat-raised-button class="button">DELIVERED</button>
                 </div>
-                <mat-form-field appearance="outline">
-                        <mat-label class="input-search">
-                                <mat-icon aria-hidden="false">search</mat-icon> search
-                        </mat-label>
-                        <input matInput>
-
-                </mat-form-field>
-                <button mat-raised-button class="button">DELIVERED</button>
         </mat-sidenav>
-        <mat-sidenav-content>
+        <mat-sidenav-content class="padd">
                 <mat-toolbar class="menu">
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/home.png" class="">
+                                <img src="../../assets/img/home.png">
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/mensaje.png" class="">
+                                <img src="../../assets/img/mensaje.png">
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/estrella.png" class="">
+                                <img src="../../assets/img/estrella.png">
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/ajustes.png" class="">
+                                <img src="../../assets/img/ajustes.png">
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/account.png" class="">
+                                <img src="../../assets/img/account.png">
                         </button>
                 </mat-toolbar>
+                <mat-form-field appearance="outline" class="input-search2">
+                        <mat-label>
+                                <mat-icon aria-hidden="false">search</mat-icon> Search
+                        </mat-label>
+                        <input matInput>
+                </mat-form-field>
+                <mat-card class="border-div">
+                        <label>sjkadjaskdjsakjd<mat-divider [vertical]="true"></mat-divider>jdkasjdksajdkasjdksa</label>
+                </mat-card>
+
         </mat-sidenav-content>
 
 </mat-sidenav-container>

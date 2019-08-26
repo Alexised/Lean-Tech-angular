@@ -13,7 +13,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 
 @NgModule({
@@ -21,14 +23,14 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     imports: [
         CommonModule,
         MatButtonModule, MatCheckboxModule, MatCardModule,
-        MatToolbarModule, MatIconModule, MatDialogModule,
+        MatToolbarModule, MatIconModule, MatDialogModule, MatDividerModule,
         MatTooltipModule, MatFormFieldModule, MatStepperModule,
         MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule,
         MatButtonToggleModule, MatSidenavModule, MatListModule, MatSlideToggleModule
     ],
     exports: [
         MatButtonModule, MatCheckboxModule, MatCardModule,
-        MatToolbarModule, MatIconModule, MatDialogModule,
+        MatToolbarModule, MatIconModule, MatDialogModule, MatDividerModule,
         MatTooltipModule, MatFormFieldModule, MatStepperModule,
         MatInputModule, MatSelectModule, MatDatepickerModule,
         MatButtonToggleModule, MatNativeDateModule, MatSidenavModule, MatListModule, MatSlideToggleModule
