@@ -80,7 +80,9 @@ a:active {
   width: 85%;
 }
 .menu{
-    margin-top:40px;
+    margin-top:20px;
+    margin-left: 40px;
+    width: 90%;
 }
 :host /deep/ .mat-slide-toggle-bar {
     background-color: #193948;
@@ -114,3 +116,8 @@ a:active {
         margin: 15px;
 
     }
+
+.menu_icon{
+    height: 65PX;
+    width: 250px;
+}
