@@ -139,7 +139,7 @@ a:active {
 
 .menu_icon {
     height: 60px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 
 
@@ -225,7 +225,7 @@ a:active {
     border:none;
     border-radius:25%;
     height:40px;
-    width:40px;
+    width:50px;
     color: white;
 }
 
@@ -254,14 +254,13 @@ a:active {
 .success {
     font-size: 48px;
     margin-left: 16px;
-    color: orange;
+    color: #EE8D38;
     height: 48px;
     width: 48px;
 }
-
 .success-for {
     font-size: 48px;
-    color: orange;
+    color: #EE8D38;
     height: 48px;
     width: 48px;
 }
