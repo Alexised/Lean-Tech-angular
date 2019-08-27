@@ -169,6 +169,7 @@ a:active {
     width: 40%;
     display: block;
     margin-top: 20px;
+    margin-right:15px;
     margin-left: auto;
 }
 
@@ -254,7 +255,7 @@ a:active {
 .success {
     font-size: 48px;
     margin-left: 16px;
-    color: #EE8D38;
+    color: orange;
     height: 48px;
     width: 48px;
 }
