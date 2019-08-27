@@ -31,48 +31,96 @@
         <mat-sidenav-content class="padd">
                 <mat-toolbar class="menu">
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/home.png">
+                                <img src="../../assets/img/home.png" class="img_icon">
+                                <p>Home</p>
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/mensaje.png">
+                                <img src="../../assets/img/mensaje.png" class="img_icon">
+                                <p>Messages</p>
+
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/estrella.png">
+                                <img src="../../assets/img/estrella.png" class="img_icon">
+                                <p>Wishlist</p>
+
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/ajustes.png">
+                                <img src="../../assets/img/ajustes.png" class="img_icon">
+                                <p>Settings</p>
+
                         </button>
                         <button mat-button class="menu_icon">
-                                <img src="../../assets/img/account.png">
+                                <img src="../../assets/img/account.png" class="img_icon">
+                                <p>My Account</p>
+
                         </button>
                 </mat-toolbar>
-                <mat-form-field appearance="outline" class="input-search2">
-                        <mat-label>
-                                <mat-icon aria-hidden="false">search</mat-icon> Search
-                        </mat-label>
-                        <input matInput>
-                </mat-form-field>
-                <mat-card class="border-div">
-                        <div class="container">
-                                <div class="row">
-                                        <div class="col-2">
-                                                Monday 10<sup>th</sup> 2:28 pm
-
-                                        </div>
-                                        <mat-divider [vertical]="true"></mat-divider>
-                                        <div class="col-4">
-                                                2 of 3 (wider)
-                                        </div>
-                                        <mat-divider [vertical]="true"></mat-divider>
-                                        <div class="col">
-                                                3 of 3
-                                        </div>
-                                </div>
+                <div class="row align-items-center">
+                        <mat-icon class="success">check_circle</mat-icon>
+                        <mat-form-field appearance="outline" class="input-search2">
+                                <mat-label>
+                                        <mat-icon aria-hidden="false">search</mat-icon> Search
+                                </mat-label>
+                                <input matInput>
+                        </mat-form-field>
+                </div>
+                <div class="row align-items-center" *ngFor="let card of [1, 1, 1]">
+                        <div class="col-sm-1 align-self-center">
+                                <mat-icon class="success-for">check_circle</mat-icon>
                         </div>
-                        <mat-divider [vertical]="true"></mat-divider>
-
-                </mat-card>
-
+                        <div class="col-sm-11 align-self-center">
+                                <mat-card class="border-div">
+                                        <div class="container">
+                                                <div class="row">
+                                                        <div class="col-2 size padd ">
+                                                                Monday 10<sup>th</sup> 2:28 pm
+                                                        </div>
+                                                        <mat-divider [vertical]="true"></mat-divider>
+                                                        <div class="col-1 align-self-center">
+                                                                <mat-icon aria-hidden="false"
+                                                                        class="material-icons-outlined send">send
+                                                                </mat-icon>
+                                                        </div>
+                                                        <div class="col-3 size">
+                                                                <p class="margin">Houston, TX, 33619</p>
+                                                                <a href="#">
+                                                                        <mat-icon aria-hidden="false" class="arrow">
+                                                                                keyboard_arrow_down
+                                                                        </mat-icon>
+                                                                </a>
+                                                                <p class="margin">Atlanta, GA, 30123</p>
+                                                        </div>
+                                                        <mat-divider [vertical]="true" class="padd-left"></mat-divider>
+                                                        <div class="col-1 align-self-center">
+                                                                <mat-icon aria-hidden="false"
+                                                                        class="material-icons local">
+                                                                        local_shipping
+                                                                </mat-icon>
+                                                        </div>
+                                                        <div class="col size align-self-center">
+                                                                <p class="precio">$ 250.00</p>
+                                                        </div>
+                                                        <div class="col-1 size align-self-center">
+                                                                <button class="num">
+                                                                        1
+                                                                </button>
+                                                        </div>
+                                                        <div class="col-1 size align-self-center">
+                                                                <a href="#">
+                                                                        <mat-icon aria-hidden="false"
+                                                                                class="material-icons more">
+                                                                                more_vert
+                                                                        </mat-icon>
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </mat-card>
+                        </div>
+                </div>
+                <button class="mdc-fab add" aria-label="Favorite" href="#">
+                        <span class="material-icons mdc-fab__icon add-font">add</span>
+                </button>
         </mat-sidenav-content>
 
 </mat-sidenav-container>

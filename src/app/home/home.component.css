@@ -44,7 +44,9 @@
 
 .size {
     text-align: center;
+    color: gray;
 }
+
 
 mat-sidenav-container,
 mat-sidenav-content,
@@ -75,7 +77,6 @@ a:active {
 
 .icon {
     display: inline-block;
-    height: 30px;
     margin: 0 auto;
     padding-right: 5px;
     text-align: center;
@@ -117,6 +118,10 @@ a:active {
     top: 4px;
 }
 
+.img_icon {
+    height: 30px;
+
+}
 
 
 :host /deep/ .mat-form-field-appearance-outline .mat-form-field-outline {
@@ -127,23 +132,34 @@ a:active {
 .divider {
     width: 60%;
     margin-left: 55px;
-    margin-top:15px;
-    margin-bottom:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
 .menu_icon {
-    height: 65PX;
-    width: 250px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+
+
 }
 
-.menu_icon:hover{
+.menu_icon p {
+    margin: -10px;
+    padding: 0;
+}
+
+.menu_icon:hover {
     background-color: #193948;
-
+    color: white;
 }
-:host /deep/ .mat-toolbar-row, .mat-toolbar-single-row {
+
+:host /deep/ .mat-toolbar-row,
+.mat-toolbar-single-row {
     padding: 0px;
 }
+
 .input-search {
     text-align: center !important;
 }
@@ -156,13 +172,14 @@ a:active {
     margin-left: auto;
 }
 
+:host /deep/ .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+}
+
 .border-div {
-    padding: 30px;
     border-radius: 25px;
-    margin-left:120px;
-    height:120px;
-    margin-left:60px; 
-    background-color:wh
+    margin-top: 24px;
+    height: auto;
 }
 
 .padd {
@@ -170,3 +187,81 @@ a:active {
     padding-left: 40px;
 }
 
+.arrow {
+    color: #EE8D38;
+    height: 40;
+    width: 60;
+    font-size: 40px
+}
+
+.send {
+    transform: rotate(-45deg);
+    color: gray;
+    vertical-align: middle !important;
+}
+
+.margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.padd-left {
+    padding-left: 30px;
+}
+
+.local {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    color: gray;
+    font-size: 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.num {
+    background-color: #ED5356;
+    border:none;
+    border-radius:25%;
+    height:40px;
+    width:40px;
+    color: white;
+}
+
+.more {
+    color: gray;
+}
+.precio{
+    font-size: 24px;
+}
+.add{
+    position: fixed;
+    bottom: 1rem;
+    margin: 1px;
+    border:none;
+    height:80px;
+    width:80px;
+    right: 1rem;
+    border-radius: 50%;
+    background-color: #EE8D38;
+    color: white;
+}
+.add-font {
+    font-size:36px;
+}
+
+.success {
+    font-size: 48px;
+    margin-left: 16px;
+    color: orange;
+    height: 48px;
+    width: 48px;
+}
+
+.success-for {
+    font-size: 48px;
+    color: orange;
+    height: 48px;
+    width: 48px;
+}
